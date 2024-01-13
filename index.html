@@ -16,16 +16,34 @@
             cursor: pointer;
             border-radius: 5px;
         }
-        .but:hover{
+        .but:hover, .res:hover{
             background-color: gray;
             color: white;
+        }
+        .res{
+            width: 100%;
+            border: 1px solid gray;
+            text-align: center;
+            margin: 5px;
+            padding: 15px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .monitor{
+            width: 100%;
+            background-color: black;
+            color: white;
+            margin: 5px;
+            padding: 15px;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
-    <div style="width:800px;margin:20px auto;font-size: 36px;">Hello!</div>
+    <div style="width:800px;margin:20px auto;font-size: 36px;text-align:center">Calculator</div>
     <div style="width:310px;margin:20px auto;padding:5px;border:1px solid silver;">
+        <div class="monitor">temp</div>
         <div class="but">1</div>
         <div class="but">2</div>
         <div class="but">3</div>
@@ -38,7 +56,11 @@
         <div class="but">0</div>
         <div class="but">+</div>
         <div class="but">-</div>
+        <div class="but">*</div>
+        <div class="but">/</div>
+        <div class="but">**</div>
         <div style="clear:both"></div>
+        <div class="res">=</div>
     </div>
 </body>
 
