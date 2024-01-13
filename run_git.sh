@@ -4,8 +4,6 @@
 # Make the Script Executable:
 # In Terminal, navigate to the directory where your script is saved.
 # Run chmod +x run_git.sh to make it executable.
-# Run the Script:
-
 # You can now run your script by typing ./run_git.sh in the Terminal while in the directory of your project.
 
 

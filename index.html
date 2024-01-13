@@ -16,12 +16,14 @@
             cursor: pointer;
             border-radius: 5px;
         }
-        .but:hover, .res:hover{
+
+        .but:hover,
+        .res:hover {
             background-color: gray;
             color: white;
         }
-        .res{
-            width: 100%;
+
+        .res {
             border: 1px solid gray;
             text-align: center;
             margin: 5px;
@@ -29,13 +31,26 @@
             cursor: pointer;
             border-radius: 5px;
         }
-        .monitor{
-            width: 100%;
+
+        .monitor {
             background-color: black;
             color: white;
             margin: 5px;
             padding: 15px;
             border-radius: 5px;
+        }
+
+        /*examples for dark/light themes*/
+        .dark .dark\:text-white {
+            color: #fff;
+        }
+
+        .dark .dark\:bg-gray-800 {
+            background-color: #1f2937;
+        }
+
+        .light .light\:text-black {
+            color: #000;
         }
     </style>
 </head>
@@ -62,6 +77,33 @@
         <div style="clear:both"></div>
         <div class="res">=</div>
     </div>
+    <!-- special scripts for integration in MTW gallery - must be placed at the bottom of the HTML after your code -->
+    <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: true // app border in the MTW page                    
+        }
+
+        ///////////////////////////////////////////////////////
+        // implement this functions in order to use private API        
+        const sendPrivateApiRequest = async () => {
+            // your code here:
+            // sendRequestToParent({ cat: 'getAssets' })
+        }
+
+        const acceptPrivateApiResponse = async (data) => {
+            // process received data here:
+            // console.log(data)
+        }
+
+        // use this in order to send on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // your code here:
+            //sendRequestToParent({ method: 'getAssets' })
+        })
+
+    </script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
 </body>
 
 </html>
